@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Isabella &amp; Isaiah · Wedding Invitation</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#065a55;--gold:#b8914a;--gold2:#a67c3a;--cream:#fbf8f1;--mint:#e4f0eb;--ink:#1c3a38;--card:#fbf8f1;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--teal:#7fd1c6;--gold:#d4ae66;--gold2:#d4ae66;--cream:#0c1f1e;--mint:#10302d;--ink:#dcebe8;--card:#0c1f1e}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:60px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Noto Serif',Georgia,serif;text-align:center;line-height:1.7}
+h1,h2{font-style:italic;font-weight:400;color:var(--teal);margin:0}
+h2{font-size:clamp(2rem,8vw,2.8rem);margin-bottom:1.5rem}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--cream);border-bottom:1px solid var(--gold);padding:.9rem 0;display:flex;justify-content:center;gap:1.2rem}
+nav a{color:var(--teal);text-decoration:none;letter-spacing:.1em;font-size:.85rem;text-transform:uppercase}
+section{padding:4.5rem 1.5rem}
+.mint{background:var(--mint)}
+.frame{max-width:460px;margin:0 auto;border:1px solid var(--gold);padding:6px}
+.frame>div{border:1px solid var(--gold);padding:2.5rem 1.2rem}
+.eyebrow{letter-spacing:.3em;font-size:.8rem;text-transform:uppercase;color:var(--teal)}
+.names{font-size:clamp(2.4rem,11vw,3.6rem);line-height:1.15;margin:.8rem 0}
+.names span{color:var(--gold)}
+.rule{width:60%;height:1px;background:var(--gold);margin:1.5rem auto}
+.date{letter-spacing:.25em;color:var(--gold2);text-transform:uppercase;margin:1.2rem 0}
+.btn{display:inline-block;border:1px solid var(--gold);color:var(--teal);background:none;padding:.8rem 1.8rem;letter-spacing:.2em;text-transform:uppercase;font:inherit;font-size:.85rem;text-decoration:none;cursor:pointer;margin-top:1rem}
+.card{max-width:520px;margin:0 auto 1.5rem;border:1px solid var(--gold);background:var(--card);padding:2.2rem 1rem}
+.card small{display:block;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.card p{margin:0;font-size:1.3rem;color:var(--teal)}
+.prog{max-width:520px;margin:0 auto;text-align:left}
+.prog div{border-bottom:1px solid var(--gold);padding:1.1rem .5rem}
+.prog time{display:block;color:var(--gold2);letter-spacing:.08em}
+.prog b{font-weight:400;font-size:1.4rem;color:var(--teal)}
+.cd{display:flex;flex-wrap:wrap;justify-content:center;gap:.8rem;max-width:520px;margin:0 auto}
+.cd div{border:1px solid var(--gold);background:var(--card);width:30%;min-width:92px;padding:1rem .3rem}
+.cd b{display:block;font-weight:400;font-size:2.4rem;color:var(--teal);line-height:1.2}
+.cd span{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold2)}
+footer{padding:2rem 1rem;font-style:italic;color:var(--teal);font-size:1.2rem}
+#welcome{position:fixed;inset:0;z-index:20;display:flex;align-items:center;justify-content:center;padding:1.5rem;background:linear-gradient(160deg,var(--mint),var(--cream));transition:opacity .8s,visibility .8s}
+#welcome.gone{opacity:0;visibility:hidden}
+#welcome .frame{width:100%;background:var(--cream)}
+#welcome .tap{animation:p 2s infinite}
+@keyframes p{50%{opacity:.4}}
+@media (prefers-reduced-motion:reduce){#welcome .tap{animation:none}html{scroll-behavior:auto}}
+.mute{display:none;position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:var(--cream);color:var(--teal);font-size:1.2rem;cursor:pointer}
+.opened .mute{display:block}.mute.off{opacity:.5;text-decoration:line-through}
+.ct{max-width:520px;margin:0 auto 1.2rem;border:1px solid var(--gold);background:var(--card);padding:1.4rem 1rem}
+.ct p{margin:0 0 .2rem;font-size:1.3rem;color:var(--teal)}.ct .num{color:var(--gold2);letter-spacing:.08em;margin-bottom:.8rem}
+.ct .btn{margin:.2rem .3rem;padding:.6rem 1.2rem}
+</style>
+</head>
+<body>
+<div id="welcome">
+ <div class="frame"><div>
+  <div class="eyebrow">You are invited</div>
+  <h1 class="names">Isabella <span>&amp;</span> Isaiah</h1>
+  <div class="rule"></div>
+  <div class="date">12 December 2026</div>
+  <button class="btn tap" id="open">Tap to open invitation</button>
+ </div></div>
+</div>
+
+<button class="mute" id="mute" aria-label="Toggle music">♪</button>
+<nav><a href="#invitation">Invitation</a><a href="#details">Details</a><a href="#programme">Programme</a></nav>
+
+<section id="invitation" class="mint">
+ <div class="frame"><div>
+  <div class="eyebrow">A celebration of love &amp; faith</div>
+  <h1 class="names">Isabella Kiboi <span>&amp;</span> Ovs Isaiah Asewe</h1>
+  <div class="rule"></div>
+  <p>Together with our families, we joyfully invite you to celebrate the beginning of our forever.</p>
+  <div class="date">Saturday · 12 December 2026</div>
+  <p>Two hearts • One covenant • One God</p>
+  <a class="btn" href="#details">Celebrate with us</a>
+ </div></div>
+</section>
+
+<section>
+ <h2>With joyful hearts</h2>
+ <p style="max-width:480px;margin:0 auto">We invite you to witness and celebrate our union as we begin a new chapter together, under God’s grace and guidance.</p>
+</section>
+
+<section id="details" class="mint">
+ <h2>Wedding Details</h2>
+ <div class="card"><small>The Date</small><p>Saturday<br><b>12 December 2026</b></p></div>
+ <div class="card"><small>The Ceremony</small><p>Bethel Main Altar<br>Maseno Depo</p></div>
+ <div class="card"><small>Celebration</small><p>Reception to follow<br>the church service</p></div>
+ <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Isabella+%26+Isaiah+Wedding&amp;dates=20261212T070000Z/20261212T140000Z&amp;location=Bethel+Main+Altar,+Maseno+Depo&amp;details=Arrival+at+the+Bride%27s+Home+10:00+AM.+Church+service+11:00+AM-1:00+PM.+Reception+1:15-5:00+PM.">Save the date</a>
+</section>
+
+<section id="programme">
+ <h2>The Programme</h2>
+ <div class="eyebrow" style="margin-bottom:2rem">Order of the day</div>
+ <div class="prog">
+  <div><time>10:00 AM</time><b>Arrival at the Bride’s Home</b></div>
+  <div><time>11:00 AM – 1:00 PM</time><b>Church Service</b></div>
+  <div><time>1:15 PM – 5:00 PM</time><b>Reception</b></div>
+ </div>
+</section>
+
+<section class="mint">
+ <h2>Counting down to our day</h2>
+ <div class="cd">
+  <div><b id="d">--</b><span>Days</span></div>
+  <div><b id="h">--</b><span>Hours</span></div>
+  <div><b id="m">--</b><span>Minutes</span></div>
+  <div><b id="s">--</b><span>Seconds</span></div>
+ </div>
+</section>
+
+<section>
+ <h2>Get in touch</h2>
+ <div class="eyebrow" style="margin-bottom:1.5rem">RSVP &amp; enquiries</div>
+ <div class="ct"><p>Isaiah</p><div class="num">0723 400 010</div><a class="btn" href="tel:+254723400010">Call</a><a class="btn" target="_blank" rel="noopener" href="https://wa.me/254723400010">WhatsApp</a></div>
+ <div class="ct"><p>Isabella</p><div class="num">0726 768 014</div><a class="btn" href="tel:+254726768014">Call</a><a class="btn" target="_blank" rel="noopener" href="https://wa.me/254726768014">WhatsApp</a></div>
+</section>
+<footer>With love &amp; gratitude · Isabella &amp; Isaiah</footer>
+
+<script>
+(function(){
+ var w=document.getElementById('welcome');
+ document.body.style.overflow='hidden';
+ var ac,gain,timer,on=false,step=0,mute=document.getElementById('mute');
+ var seq=[261.63,329.63,392,523.25,392,329.63,220,261.63,329.63,440,329.63,261.63,174.61,220,261.63,349.23,261.63,220,196,246.94,293.66,392,293.66,246.94];
+ function note(f,t){var o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=f;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.18,t+.03);g.gain.exponentialRampToValueAtTime(.001,t+1.6);o.connect(g);g.connect(gain);o.start(t);o.stop(t+1.7)}
+ function loop(){if(!on)return;note(seq[step%seq.length],ac.currentTime+.05);step++;timer=setTimeout(loop,650)}
+ function startMusic(){try{var C=window.AudioContext||window.webkitAudioContext;ac=new C();gain=ac.createGain();gain.gain.value=.5;gain.connect(ac.destination);on=true;loop()}catch(e){}}
+ mute.onclick=function(){if(!ac)return;if(on){on=false;clearTimeout(timer);mute.classList.add('off')}else{on=true;mute.classList.remove('off');if(ac.state==='suspended')ac.resume();loop()}};
+ document.getElementById('open').onclick=function(){w.classList.add('gone');document.body.classList.add('opened');document.body.style.overflow='';window.scrollTo(0,0);startMusic()};
+ var t=new Date('2026-12-12T10:00:00+03:00').getTime();
+ function p(n){return n<10?'0'+n:''+n}
+ function tick(){
+  var x=Math.max(0,t-Date.now());
+  document.getElementById('d').textContent=Math.floor(x/864e5);
+  document.getElementById('h').textContent=p(Math.floor(x/36e5)%24);
+  document.getElementById('m').textContent=p(Math.floor(x/6e4)%60);
+  document.getElementById('s').textContent=p(Math.floor(x/1e3)%60);
+ }
+ tick();setInterval(tick,1000);
+})();
+</script>
+</body>
+</html>
