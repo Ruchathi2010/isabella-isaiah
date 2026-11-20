@@ -6,9 +6,9 @@
 <title>Isabella &amp; Isaiah · Wedding Invitation</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--teal:#065a55;--gold:#b8914a;--gold2:#a67c3a;--cream:#fbf8f1;--mint:#e4f0eb;--ink:#1c3a38;--card:#fbf8f1;
+:root{color-scheme:dark;--teal:#3fc1b0;--gold:#d4ae66;--gold2:#d4ae66;--cream:#08191a;--mint:#0d2b2a;--ink:#e8efec;--card:#0b2220;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--teal:#7fd1c6;--gold:#d4ae66;--gold2:#d4ae66;--cream:#0c1f1e;--mint:#10302d;--ink:#dcebe8;--card:#0c1f1e}}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:60px}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:'Noto Serif',Georgia,serif;text-align:center;line-height:1.7}
@@ -22,7 +22,8 @@ section{padding:4.5rem 1.5rem}
 .frame>div{border:1px solid var(--gold);padding:2.5rem 1.2rem}
 .eyebrow{letter-spacing:.3em;font-size:.8rem;text-transform:uppercase;color:var(--teal)}
 .names{font-size:clamp(2.4rem,11vw,3.6rem);line-height:1.15;margin:.8rem 0}
-.names span{color:var(--gold)}
+.names{color:var(--gold)}
+.names span{color:var(--teal)}
 .rule{width:60%;height:1px;background:var(--gold);margin:1.5rem auto}
 .date{letter-spacing:.25em;color:var(--gold2);text-transform:uppercase;margin:1.2rem 0}
 .btn{display:inline-block;border:1px solid var(--gold);color:var(--teal);background:none;padding:.8rem 1.8rem;letter-spacing:.2em;text-transform:uppercase;font:inherit;font-size:.85rem;text-decoration:none;cursor:pointer;margin-top:1rem}
@@ -42,7 +43,8 @@ footer{padding:2rem 1rem;font-style:italic;color:var(--teal);font-size:1.2rem}
 #welcome.gone{opacity:0;visibility:hidden}
 #welcome .frame{width:100%;background:var(--cream)}
 #welcome .tap{animation:p 2s infinite}
-@keyframes p{50%{opacity:.4}}
+@keyframes p{50%{opacity:.5}}
+#open{width:170px;height:170px;border-radius:50%;padding:1rem;display:flex;align-items:center;justify-content:center;margin:1.4rem auto 0;border-width:2px;text-align:center;line-height:1.5;letter-spacing:.12em;font-size:.8rem;color:var(--gold)}
 @media (prefers-reduced-motion:reduce){#welcome .tap{animation:none}html{scroll-behavior:auto}}
 .mute{display:none;position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:6;width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);background:var(--cream);color:var(--teal);font-size:1.2rem;cursor:pointer}
 .opened .mute{display:block}.mute.off{opacity:.5;text-decoration:line-through}
